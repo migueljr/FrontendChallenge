@@ -1,0 +1,39 @@
+.title{
+  font-family: 'Caveat', cursive;
+  font-size:7em;
+  font-weight: bold;
+  color:white;
+  text-shadow: 1px 2px #3d3d3d;
+  margin-top: 250px;
+}
+
+.subtitle{
+  font-family: 'Caveat', cursive;
+  font-size:4em;
+  font-weight: bold;
+  color:white;
+  text-shadow: 1px 2px #3d3d3d;
+  margin-top: 50px;
+}
+
+.subtitle span{
+  display: block;
+  margin-top: 50px;
+}
+.button-welcome{
+  margin-top: 120px;
+}
+.button-welcome a{
+  text-decoration: none;
+  color:white;
+  border:1px solid #eee;
+  padding: 12px 40px;
+  font-size: 2em;
+  border-radius: 3px;
+}
+
+.button-welcome a:hover{
+  color:black;
+  background-color: white;
+
+}

@@ -1,0 +1,76 @@
+.title-pages{
+  font-family: 'Caveat', cursive;
+  font-size:6em;
+  font-weight: bold;
+  color:white;
+  text-shadow: 1px 2px #3d3d3d;
+  margin-top: 100px;
+}
+
+.subtitle-pages{
+  font-family: 'Tajawal', sans-serif;
+  color:white;
+  font-weight: 600;
+  text-shadow: 1px 2px #3d3d3d;
+  margin-top: 50px;
+}
+
+.step-text{
+  font-family: 'Caveat', cursive;
+  font-size:4em;
+  font-weight: bold;
+  color:white;
+  text-shadow: 1px 2px #3d3d3d;
+  margin-top: 20px;
+}
+
+.text-cursive{
+  font-family: 'Caveat', cursive;
+  font-size:2em;
+  font-weight: bold;
+  color:white;
+  text-shadow: 1px 2px #3d3d3d;
+  margin-top: 20px;
+}
+
+.text-cursive small{
+  display: block;
+}
+
+
+.form-insert-teams{
+  margin-top: 40px;
+}
+
+.input-insert-teams{
+  font-family: 'Tajawal', sans-serif;
+  font-size: 1.5em;
+  height: 60px;
+  width: 100%;
+  padding:0px 20px;
+}
+
+.button-page{
+  margin-top: 50px;
+}
+.button-page{
+  text-decoration: none;
+  color:white;
+  border:1px solid #eee;
+  padding: 12px 40px;
+  font-size: 1.5em;
+  width: 100%;
+  border-radius: 3px;
+  background-color: transparent;
+}
+
+.button-page:hover{
+  color:black;
+  background-color: white;
+
+}
+
+.text-normal{
+  color:white;
+  font-weight: 600;
+}

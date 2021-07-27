@@ -1,0 +1,33 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h1 class="text-center title-pages">Battle for valoran</h1>
+      <h2 class="text-center subtitle-pages">
+        Você precisa cadastrar 8 equipes para o torneio.
+      </h2>
+    </div>
+    <div class="col-md-6">
+      <h2 class="step-text text-center"> {{listTeams.length+1 > 8 ? 'Pronto!' : listTeams.length+1 + ' / 8 equipes'}} </h2>
+      <form *ngIf="listTeams.length < 8; else start" class="form-insert-teams" (ngSubmit)="addTeam()">
+        <input class="input-insert-teams" name="team" [(ngModel)]="data.name" required placeholder="Nome da equipe" type="text">
+        <button type="submit" class="button-page"> {{'Cadastrar Equipe ' + (listTeams.length+1)}}</button>
+      </form>
+      <ng-template #start>
+        <form class="form-insert-teams">
+          <button class="button-page" routerLink="/tournament">Começar torneio agora</button>
+        </form>
+      </ng-template>
+    </div>
+    <div class="col-md-6">
+      <h2 class="step-text text-center"> <small>Equipes já cadastradas</small></h2>
+      <h5 *ngIf="listTeams.length > 0; else empty" class="text-cursive text-center">
+        <small *ngFor="let item of listTeams">
+          <i class="bi bi-shield-shaded"></i> {{item.name}}
+        </small>
+      </h5>
+      <ng-template #empty>
+        <p class="text-center text-normal">Nenhuma equipe cadastrada</p>
+      </ng-template>
+    </div>
+  </div>
+</div>

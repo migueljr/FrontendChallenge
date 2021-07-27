@@ -1,0 +1,105 @@
+.title-pages{
+  font-family: 'Caveat', cursive;
+  font-size:5em;
+  font-weight: bold;
+  color:white;
+  text-shadow: 1px 2px #3d3d3d;
+  margin-top: 50px;
+}
+
+.subtitle-pages{
+  font-family: 'Tajawal', sans-serif;
+  color:white;
+  font-weight: 600;
+  text-shadow: 1px 2px #3d3d3d;
+  margin-top: 10px;
+}
+
+.text-cursive{
+  font-family: 'Caveat', cursive;
+  font-size:2em;
+  font-weight: bold;
+  color:white;
+  text-shadow: 1px 2px #3d3d3d;
+  margin-top: 20px;
+}
+
+.text-cursive small{
+  display: block;
+}
+
+.text-cursive small:nth-child(1){
+  color:darkred;
+}
+.text-cursive small:nth-child(2){
+  color:mediumpurple;
+}
+.text-cursive small:nth-child(3){
+  color:cornflowerblue;
+}
+.text-cursive small:nth-child(4){
+  color:darkgreen;
+}
+.text-cursive small:nth-child(5){
+  color:coral;
+}
+.text-cursive small:nth-child(6){
+  color:yellowgreen;
+}
+.text-cursive small:nth-child(7){
+  color:hotpink;
+}.text-cursive small:nth-child(8){
+   color:grey;
+ }
+
+ i{
+   margin-right: 20px;
+ }
+
+.box-alpha1 .box-master .box:nth-child(2n+1){
+  margin-top: 75px;
+}
+
+.box-alpha2 .box-master .box:nth-child(2n+1){
+  margin-top: 180px;
+}
+
+.box-alpha3 .box-master:nth-child(2n+1){
+  margin-top: 320px;
+}
+
+.box-alpha3{
+  margin-top: 200px;
+}
+
+ .box-master{
+   margin-bottom: 40px;
+ }
+.box{
+  padding: 4px;
+  border-radius: 2px;
+  border:1px solid #eee;
+  background-color: rgba(238, 238, 238, 0.10);
+  font-size: 1.2em;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color:white;
+  margin-top: 10px;
+}
+
+.disabled{
+  opacity: 0.6 !important;
+  cursor: not-allowed !important;
+}
+
+.color-danger{
+  color: #e86e6e;
+}
+
+.color-success{
+  color: #4ea951;
+}
+

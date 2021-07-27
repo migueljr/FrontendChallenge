@@ -1,0 +1,58 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h1 class="text-center title-pages">Battle for valoran</h1>
+      <h2 class="text-center mb-5 subtitle-pages">
+       O torneio começou
+      </h2>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+
+        <div class="box-alpha1">
+          <div class="box-master">
+            <div *ngFor="let item of listTeams; let i = index" (click)="setDatateams(item, 1)" [class]="(item.step != 1)?'box disabled':'box'">
+              <span>
+                <i class="bi bi-shield-shaded"></i> {{item.name}}
+              </span>
+              <i class="bi bi-check-circle-fill selector-icon-default"></i>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+      <div class="col-md-4">
+
+        <div class="box-alpha2">
+          <div class="box-master">
+            <div *ngFor="let item of semifinal; let i = index" (click)="setDatateams(item, 2)" [class]="(item.step != 2)?'box disabled':'box'">
+              <span>
+                <i class="bi bi-shield-shaded"></i> {{ semifinal && semifinal[i] ? semifinal[i].name : 'A definir' }}
+              </span>
+              <i class="bi bi-check-circle-fill selector-icon-default"></i>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+      <div class="col-md-4">
+
+        <div class="box-alpha3">
+          <div class="box-master">
+            <div *ngFor="let item of final; let i = index" (click)="setChampion(item)" [class]="(item.step != 3)?'box disabled':'box'">
+              <span>
+                <i class="bi bi-shield-shaded"></i> {{ final && final[i] ? final[i].name : 'A definir' }}
+              </span>
+              <i class="bi bi-check-circle-fill selector-icon-default"></i>
+            </div>
+          </div>
+
+        </div>
+
+
+    </div>
+  </div>
+</div>

@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h1 class="text-center title">Battle for valoran</h1>
+      <h2 class="text-center subtitle">
+        <small>
+          Temos um vencedor
+        </small>
+        <span>
+          <i class="bi bi-shield-shaded"></i>
+          {{champion ? champion.name : ''}}
+        </span>
+      </h2>
+      <p class="text-center button-welcome ">
+        <a (click)="goHomeAndReset()" class="mt-5">Reiniciar torneio</a>
+      </p>
+    </div>
+  </div>
+</div>
